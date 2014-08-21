@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-simple-file-server",
+  "version": "0.0.1",
+  "description": "nodejs simple file server",
+  "main": "app.js",
+  "scripts": {
+    "start": "forever start -l forever.log -a -o out.log -e err.log src/app.js",
+    "stop": "forever stop src/app.js",
+    "test": "mocha -R Spec"
+  },
+  "dependencies": {
+    "express": "~3.13.0",
+    "rimraf": "~2.2.8",
+    "body-parser": "~1.4.3",
+    "forever": "~0.11.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "~4.0.4",
+    "supertest": "~0.13.0",
+	"mocha-jenkins-reporter": "~0.1.0"
+  }
+}

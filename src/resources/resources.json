@@ -1,0 +1,14 @@
+{
+    "instruction": [
+		"nodejs-simple-file-server is running..",
+		"",
+		"Allowed operations:",
+		"GET --> /job --> return the list of active jobs",
+		"POST --> /job --> create a new job and return the id",
+		"GET --> /job/<job-id>/state --> return job state (ready/uploading/uploaded/copied)",
+		"POST --> /job/<job-id>/state/uploaded --> change the job state to uploaded",
+		"POST --> /job/<job-id>/state/copied --> change the job state to copied",
+		"GET --> /job/<job-id>/upload --> return list of files uploaded",
+		"POST --> /job/<job-id>/upload {name:<fileName>, content:<fileContent>} --> upload a file in server",
+		"GET --> /job/<job-id>/file/<file-name> --> return requested file"]
+}
